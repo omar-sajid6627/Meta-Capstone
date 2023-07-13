@@ -1,6 +1,8 @@
-#specials{
-    margin-top: 10%;
-    #specials-section{
+#testimonials{
+    margin-top: 5%;
+    background-color: #495E57;
+     
+    #testimonials-section{
         padding-left: 15% ;
         padding-right:15% ;
         @media (max-width: 480px) {
@@ -17,10 +19,16 @@
             padding-right: 10%;
         
         }
+        img{
+            width: 8rem;
+           
+          max-height: 8rem;
+            border-radius: 50%;
+        }
         
 
         h1{
-            color: #495E57;
+            color: aliceblue ;
         }
         h3{
             color: #495E57;
@@ -28,19 +36,22 @@
         .price{
             color: #EE9972;
         }
-        h5{
+        p{
             color: #495E57;
+            line-height: 1.5;
             font-family: karla,serif;
         }
 
-        
+        span{
+            color: #F4CE14;
+        }
         img{
             height: 12.5rem;
         }
         article{
             height: 100%;
         }
-        #specials-row{
+        #testimonials-row{
             @media (max-width: 768px) and (min-width: 481px) {
                 display: flex;
                 flex-direction: column;
