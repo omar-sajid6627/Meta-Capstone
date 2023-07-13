@@ -54,7 +54,7 @@ const Specials =()=>{
                               <h3 className="card-title price" >{dish.price}</h3>
                               </div>
                              
-                              <h4 className="card-text mb-3">{dish.description}</h4>
+                              <h5 className="card-text mb-3">{dish.description}</h5>
                               {/* <div className="card-footer d-flex align-items-center justify-content-center">
                               
                               </div> */}

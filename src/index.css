@@ -5,6 +5,12 @@
 }
 
 
+@font-face {
+  font-family: 'karla';
+  src: url('../public/Karla-VariableFont_wght.ttf') format('truetype');
+  /* Add more formats if necessary */
+}
+
 
 
 body {
