@@ -1,0 +1,92 @@
+#story{
+    margin-top: 5%;
+    height: 100%;
+    object-fit: contain;
+    article{
+        height: 100%;
+
+
+      
+    }
+
+    #story-section{
+        padding-left: 15% ;
+        padding-right:15% ;
+        color: #495E57;
+        @media (max-width: 480px) {
+            padding-left: 5% ;
+             padding-right:5% ;
+        }
+        @media (max-width: 1023px) and (min-width: 768px) {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        @media (max-width: 768px) and (min-width: 481px) {
+          
+            padding-left: 10%;
+            padding-right: 10%;
+        
+        }
+        h1{
+            color: #F4CE14;
+        }
+        p{
+            font-family: karla,serif;
+        }
+        img{
+            width: 75%;
+            height: auto;
+            border-radius: 1rem;
+            @media (max-width: 1023px) and (min-width: 769px) {
+                width:90%
+            }
+            @media (max-width: 768px) and (min-width: 481px) {
+                width: 90%;
+            }
+            @media (max-width: 480px) {
+                width: 100%;
+            }
+        }
+        #image_cont{
+            position: relative;
+            img{
+                position: absolute;
+                top: 0;
+                left:0;
+                max-width: 100%;
+
+            }
+            #image-overlay{
+                z-index: 1;
+                top: 30%;
+                left: 30%;
+            }
+            @media (max-width: 1023px) and (min-width: 769px) {
+                #image-overlay{
+                  top:20%;
+                  left: 20%;
+                }
+            }
+            @media (max-width: 768px) and (min-width: 481px) {
+                #image-overlay{
+                    top:20%;
+                    left: 20%;
+                  }
+            }
+            @media (max-width: 480px) {
+               img{
+                position: relative;
+                top: 0;
+                left:0;
+                max-width: 100%;
+                padding: 1%;
+               }
+               #image-overlay{
+                z-index: 0;
+                top: 0%;
+                left: 0%;
+            }
+            }
+        }
+    }
+}

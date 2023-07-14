@@ -14,7 +14,7 @@ return(
                 <button type="button" class="btn btn-warning btn-lg">Reserve a table</button>
             </div>
             <div className="col-5">
-               <img src={myImage} alt="restaruant image"></img>
+               <img src={myImage} alt="restaruant"></img>
             </div>
           </div>
         </div>
