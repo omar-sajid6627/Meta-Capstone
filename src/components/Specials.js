@@ -3,6 +3,8 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import greekSalad from "./icons_assets/greek salad.jpg"
 import bruschetta from './icons_assets/bruschetta.jpg'
 import lemonDessert from "./icons_assets/lemon dessert.jpg"
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const dishes = [
@@ -32,13 +34,14 @@ const dishes = [
 
 
 const Specials =()=>{
+  const navigate=useNavigate();
 
     return(
         <section id="specials">
             <div className="container-fluid " id="specials-section">
                 <div className="d-flex align-items-center justify-content-between mb-3 ">
                     <h1>This Weeks Specials</h1>
-                    <button type="button" className="btn btn-warning btn-lg">Reserve a table</button>
+                   <Link to={'/order'}> <button type="button" className="btn btn-warning btn-lg">Order Online</button></Link>
                 </div>
                 <div className="row" id="specials-row">
                     {
@@ -55,10 +58,7 @@ const Specials =()=>{
                               </div>
                              
                               <h5 className="card-text mb-3">{dish.description}</h5>
-                              {/* <div className="card-footer d-flex align-items-center justify-content-center">
-                              
-                              </div> */}
-                              <a href="#" className="btn btn-warning">Order for Delivery</a>
+                              <a href="#" className="btn btn-warning" onClick={()=>navigate('/order')}>Order for Delivery</a>
                              
                             </div>
                           </div>
