@@ -2,6 +2,7 @@ import "bootstrap";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "./jumbotronstyle.scss";
 import myImage from './icons_assets/restauranfood.jpg';
+import { Link } from "react-router-dom";
 const Jumbotron=()=>{
 return(
     <section id="hero">
@@ -11,7 +12,7 @@ return(
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                <button type="button" class="btn btn-warning btn-lg">Reserve a table</button>
+                <Link to={'/reservation'}><button type="button" class="btn btn-warning btn-lg">Reserve a table</button></Link>
             </div>
             <div className="col-5">
                <img src={myImage} alt="restaruant"></img>

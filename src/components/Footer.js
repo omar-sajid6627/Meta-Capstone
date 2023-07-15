@@ -14,6 +14,7 @@ import './footerstyles.scss'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import icon from './icons_assets/logo-white.png'
+import { Link } from 'react-router-dom';
 
 
 const contacts = [
@@ -34,20 +35,20 @@ const Footer=()=>{
         <footer id="footer">
             <div className='container-fluid py-2' id='footer-container'>
                 <div className='row'>
-                    <div className='col-3 d-flex flex-column align-items-center'>
+                    <div className='col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6 d-flex flex-column align-items-center'>
                         <img src={icon} alt='logo'></img>
                     </div>
-                    <div className='col-3 d-flex flex-column align-items-start'>
+                    <div className='col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6 d-flex flex-column align-items-start'>
                      <h4>
                         Quick Links
                      </h4>
                      <ul>
-                     <li>Home</li>
-                     <li>About</li>
-                     <li>Menu</li>
-                     <li>Reservations</li>
-                     <li>Order Online</li>
-                     <li>Login</li>
+                     <Link to={"/"}><li>Home</li> </Link>
+                     <Link to={'/about'}><li>About</li></Link>
+                     <Link to={'/menu'}><li>Menu</li></Link>
+                     <Link to={'/reservation'}><li>Reservations</li></Link>
+                     <Link to={'/order'}><li>Order Online</li></Link>
+                     <Link to={'/login'}><li>Login</li></Link>
 
                      </ul>
                      
@@ -56,7 +57,7 @@ const Footer=()=>{
 
 
                     </div>
-                    <div className='col-3 d-flex flex-column align-items-start'>
+                    <div className='col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6 d-flex flex-column align-items-start'>
                         <h4>
                             Contact Us
                         </h4>
@@ -68,7 +69,7 @@ const Footer=()=>{
           )}
           </address>
                     </div>
-                    <div className='col-3 d-flex flex-column align-items-start'>
+                    <div className='col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6 d-flex flex-column align-md-items-start alig-items-center'>
                     <h4>Connect with us</h4>
                     <div className='d-flex align-items-start justify-content-between'>
           {socials.map((social, index) => 
